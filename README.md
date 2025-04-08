@@ -1,2 +1,2 @@
-# MotionEdge
+# Swing Vision
 An app
