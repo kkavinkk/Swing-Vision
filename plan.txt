@@ -1,7 +1,0 @@
-Make it easy and research
-
-We want to mak eit Camera-based so pose estimation or object tracking using a SMARTPHONE CAMERA.
-
-For camera ise google mediapipe pose or openmpose
-can tracj joints positions like wrists elbows, shoulders, we can track a bat 
-by using markers or detect it via vision models
