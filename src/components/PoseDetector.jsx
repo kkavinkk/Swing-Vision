@@ -14,5 +14,51 @@ const PoseDetector = () => {
         });
 
         //set up Media Pipe pose
-    })
+        const pose = new Pose({
+            locateFile: (file) =>
+                `https://cdn.jsdelivr.net/npm/@mediapipe/pose/${file}`, 
+        });
+
+        pose.setOptions({
+            modelComplexity: 1,
+            smoothLandmarks: true,
+            enableSegmentation: false,
+            minDetectionConfidence: 0.5,
+            minTrasckingConfidence: 0.5,
+        });
+
+        pose.onresults(onResults);
+
+        //Process video frames
+        const onFrame = async () => {
+            if (
+                videoRef.current.readyState == 4 // fully loads before proccessing
+            ) {
+                await pose.send({ image: videoRef.current });
+            }
+            requestAnimationFrame(onFrame);
+        };
+
+        onFrame();
+    }, []);
+
+    // Hand Pose Results
+    const onResults = (results) => {
+        const canvasCtx = canvasRef.current.getContext("%2d");
+
+        // Draw Video Frame to Canvas
+        canvasCtx.save();
+        cavnvasCtx.clearRect(
+            0,
+            0,
+            canvasRef.current.width,
+            canvasRef.current.height,
+        );
+        cavnvasCtx.drawImage(
+            0,
+            0,
+            canvasRef.current.width,
+            canvasRef.current.height,
+        );
+    }
 }
