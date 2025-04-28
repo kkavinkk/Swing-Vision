@@ -1,15 +1,13 @@
-import { useState } from 'react'
-function App() {
-  const [count, setCount] = useState(0)
+import React from 'react';
+import WebcamFeed from './WebcamFeed';
 
+function App() {
   return (
-    <>
-      <div className='bg-transparant'><p>Swing Vison</p>
-        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
-        <video src="webcam"></video>
-      </div>
-    </>
-  )
+    <div className="App">
+      <WebcamFeed />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
