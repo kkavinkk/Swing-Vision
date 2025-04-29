@@ -72,7 +72,7 @@ const PoseDetector = () => {
       <canvas ref={canvasRef} width={640} height={480} className="rounded-2xl shadow-lg" />
     </div>
   );
-  // run through pose detection here
+  // run through pose detection hereffffff
 };
 
 export default PoseDetector;
