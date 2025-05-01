@@ -73,6 +73,24 @@ const PoseDetector = () => {
     </div>
   );
   // run through pose detecti545454on hereffffff
+
+  testSupport([
+    {client: 'Chrome'},
+  ]);
+  
+  function testSupport(supportedDevices:{client?: string; os?: string;}[]) {
+    const deviceDetector = new DeviceDetector();
+    const detectedDevice = deviceDetector.parse(navigator.userAgent);
+  
+    let isSupported = false;
+    for (const device of supportedDevices) {
+      if (device.client !== undefined) {
+        const re = new RegExp(`^${device.client}$`);
+        if (!re.test(detectedDevice.client.name)) {
+          continue;
+        }
+      }
+      if (device.os !== u
 };
 
 export default PoseDetector;
