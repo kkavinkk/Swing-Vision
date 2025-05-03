@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Body Detection with MediaPipe</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    video, canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video input (hidden) -->
+  <video class="input_video" style="display:none;"></video>
+
+  <!-- Canvas for rendering results -->
+  <canvas class="output_canvas"></canvas>
+
+  <!-- MediaPipe and drawing libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+  <!-- Your detection logic -->
+  <script src="script.js"></script>
+
+</body>
+</html>
