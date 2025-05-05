@@ -31,10 +31,11 @@ const camera = new Camera(videoElement, {
   onFrame: async () => {
     await pose.send({ image: videoElement });
   },
-  width: 1280,
-  height: 720
+  width: 1920,
+  height: 1080
 });
 camera.start();
+
 
 /*const landmarks = results.poseLandmarks;
 
