@@ -35,3 +35,26 @@ const camera = new Camera(videoElement, {
   height: 720
 });
 camera.start();
+
+/*const landmarks = results.poseLandmarks;
+
+// Example: check if left elbow is above left wrist
+if (landmarks[13].y < landmarks[15].y) {
+  // Elbow above wrist
+}
+
+// Example: check if left leg knee is bent (knee below hip)
+if (landmarks[25].y > landmarks[23].y + 0.05) {
+  // Knee bent
+}
+
+// Example: check if shoulders are rotated towards off-side
+if (Math.abs(landmarks[12].x - landmarks[11].x) > 0.1) {
+  // Shoulders rotated
+}
+
+// Combine all criteria:
+if (elbowAboveWrist && kneeBent && shouldersAligned) {
+  console.log("Cover Drive Detected!");
+}
+ */
