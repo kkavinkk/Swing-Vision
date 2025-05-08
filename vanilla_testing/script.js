@@ -24,7 +24,9 @@ pose.onResults((results) => {
     drawConnectors(canvasCtx, results.poseLandmarks, POSE_CONNECTIONS, { color: '#00FF00', lineWidth: 2 });
     drawLandmarks(canvasCtx, results.poseLandmarks, { color: '#FF0000', lineWidth: 0.5 });
   }
-  canvasCtx.restore();ts fasrt fast fafaffafa fast sm
+  canvasCtx.restore();
+  /*
+  INSER THER PROPGRAM HERE  */
 });
 
 const camera = new Camera(videoElement, {
