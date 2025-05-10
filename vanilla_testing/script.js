@@ -25,8 +25,8 @@ pose.onResults((results) => {
     drawLandmarks(canvasCtx, results.poseLandmarks, { color: '#FF0000', lineWidth: 0.5 });
   }
   canvasCtx.restore();
-  /*saxasxcc
-  INSER THER PROPGRAM HERE  */
+  <video class="input_video" style="display:none;" width="1920" height="1080"></video>
+<canvas class="output_canvas" width="1920" height="1080"></canvas>
 });
 
 const camera = new Camera(videoElement, {
