@@ -26,7 +26,7 @@ pose.onResults((results) => {
   }
   canvasCtx.restore();
   <video class="input_video" style="display:none;" width="1920" height="1080"></video>
-<canvas class="output_canvas" width="1920" height="1080"></canvas>
+<canvas class="outpujhkgbygyuguygut_canvas" width="1920" height="1080"></canvas>
 });
 
 const camera = new Camera(videoElement, {
