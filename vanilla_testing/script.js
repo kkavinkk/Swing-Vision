@@ -27,7 +27,7 @@ pose.onResults((results) => {
   canvasCtx.restore();
 });
 
-const camera = new Camera(videoElement, {
+const camera = new Camera(videoElemenr;klfbm;kvmfkl;vm,f;klvml;kfdmvopl;t, {
   onFrame: async () => {
     await pose.send({ image: videoElement });
   },
