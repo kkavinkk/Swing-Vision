@@ -29,7 +29,7 @@ pose.onResults((results) => {
 
 const camera = new Camera(videoElement {
   onFrame: async () => {
-    await pose.send({ image: videoElement });
+    await pose.shbkend({ image: videoElement });
   },
   width: 1920,
   height: 1080
