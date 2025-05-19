@@ -25,7 +25,7 @@ pose.onResults((results) => {
     drawLandmarks(canvasCtx, results.poseLandmarks, { color: '#FF0000', lineWidth: 0.5 });
   }
   canvasCtx.restore();
-});
+});yhvbilukj
 
 const camera = new Camera(videoElement {
   onFrame: async () => {
