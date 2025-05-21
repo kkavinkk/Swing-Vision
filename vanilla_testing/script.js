@@ -39,7 +39,7 @@ camera.start();
 
 /*const landmarks = results.poseLandmarks;
 
-// Example: check if left elbow is above left wrist
+// Example: check if left elbow iscsscscsccsddsvdvss above left wrist
 if (landmarks[13].y < landmarks[15].y) {
   // Elbow above wrist
 }
