@@ -43,7 +43,7 @@ camera.start();
 if (landmarks[13].y < landmarks[15].y) {
   // Elbow above wrist
 }grfzdsxb mhthjdnfgctdfgchjnkbjbjsafsfdhkbkhjbhjdsgdfgsdgsdgfedfdf
-fddsfdf
+fddsfdfgjvnjhghjfgvhj
 // Example: check if left leg knee is bent (knee below hip)
 if (landmarks[25].y > landmarks[23].y + 0.05) {
   // Knee bent
